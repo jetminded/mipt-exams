@@ -1,7 +1,7 @@
 # 2 семестр
 
 ## ОКТЧ: Ира - 9 июня, остальные - 10 июня
-- Распределение билетов
+- [Распределение билетов](https://docs.google.com/spreadsheets/d/1r3AxNPDjGgxolTq5YUehK4u9Ugu9B3yVh6FZy7tAMMM/edit?usp=sharing)
 - Папка с билетами
 
 ## Матлог: Ира - 15 июня, остальные - 16 июня
