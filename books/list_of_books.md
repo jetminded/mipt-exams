@@ -12,6 +12,6 @@
 Интернет версия: [https://www.mccme.ru/free-books/shen/shen-logic-part3-2.pdf](https://www.mccme.ru/free-books/shen/shen-logic-part3-2.pdf)  
 Файл книги: [https://github.com/blindsniperN/mipt-exams/blob/main/books/shen-part3.pdf](https://github.com/blindsniperN/mipt-exams/blob/main/books/shen-part3.pdf)
 
-### 4) Коллектив 1 курса ФБМФ, Сборник распространенных вопросов, примеров и контрпримеров по курсу МА (2 семестр)
+### 4) Коллектив 1 курса ФБМФ, Сборник распространенных вопросов по курсу МА (2 семестр)
 Интернет версия: [https://vk.com/doc166694577_551347343?hash=d773565b2956375649&dl=340fdc7fd54c2aee3e](https://vk.com/doc166694577_551347343?hash=d773565b2956375649&dl=340fdc7fd54c2aee3e)  
 Файл книги: [https://github.com/blindsniperN/mipt-exams/blob/main/books/matan-examples.pdf](https://github.com/blindsniperN/mipt-exams/blob/main/books/matan-examples.pdf)
