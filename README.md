@@ -6,7 +6,6 @@
 
 ## Матлог: Ира - 15 июня, остальные - 16 июня
 - [Распределение билетов](https://docs.google.com/spreadsheets/d/1_5uhLqtdn4G0R26ir43FqoC7gUQ21KBlS98LInOwN5Y/edit?usp=sharing)
-- [Таблица с доп.вопросами](https://docs.google.com/spreadsheets/d/1_5uhLqtdn4G0R26ir43FqoC7gUQ21KBlS98LInOwN5Y/edit#gid=0)
 - [Список используемых книг](https://github.com/blindsniperN/mipt-exams/blob/main/books/list_of_books.md)
 - Папка с билетами
 
