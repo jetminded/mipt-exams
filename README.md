@@ -15,5 +15,5 @@
 
 
 ## Плюсы 29 - 30 июня
-- Распределение билетов
+- [Распределение билетов](https://docs.google.com/spreadsheets/d/1fGQMHQVpjbJJZcXxGh-LhX_5XmgUIXnA22thaXDb5Y8/edit#gid=0)
 - Папка с билетами
