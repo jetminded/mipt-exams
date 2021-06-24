@@ -16,4 +16,4 @@
 
 ## Плюсы 29 - 30 июня
 - [Распределение билетов](https://docs.google.com/spreadsheets/d/1fGQMHQVpjbJJZcXxGh-LhX_5XmgUIXnA22thaXDb5Y8/edit#gid=0)
-- Папка с билетами
+- [Папка с билетами](https://github.com/blindsniperN/mipt-exams/tree/main/2sem-CPP/%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D1%8B)
