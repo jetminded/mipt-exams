@@ -1,4 +1,24 @@
-## Пример 1
+# 1. Основы (cout'ы, поля видимости, etc)
+
+## Пример 1.1
+```
+#include <iostream>
+
+int a;
+
+int main () {
+    std::cout << a;
+}
+```
+Ответ: 0  
+Пояснение: Since _a_ has static storage duration and no initializer, it is guaranteed to be zero-initialized. Had a been defined as a local non-static variable inside `main()`, this would not have happened.
+
+Note: int a has static storage duration because it is declared at namespace scope. It does not need to have static in front of it, that would only denote internal linkage.
+
+
+# 2. Наследование и иже с ним
+
+## Пример 2.1
 ```#include <iostream>
 #include <exception>
 
@@ -37,7 +57,7 @@ int main() {
 Ответ: acabBA  
 Пояснение: Static local variables are initialized the first time control passes through their declaration. The first time `foo()` is called, `b` is attempted initialized. Its constructor is called, which first constructs all member variables. This means `A::A()` is called, printing _a_. `A::A()` then throws an exception, the constructor is aborted, and neither `b` or `B::a` are actually considered constructed. In the catch-block, _c_ is printed, and then `foo()` is called again. Since `b` was never initialized the first time, it tries again, this time succeeding, printing _ab_. When main() exits, the static variable `b` is destroyed, first calling the destructor printing _B_, and then destroying member variables, printing _A_.
 
-## Пример 2
+## Пример 2.2
 ```
 #include <iostream>
 
@@ -64,22 +84,11 @@ int main() {
 Ответ: CE  
 Пояснение: There is a compilation error when attempting to declare `A::createB()` a friend of `B`. To declare `A::createB()` a friend of `B`, the compiler needs to know that that function exists. Since it has only seen the declaration of `A` so far, not the full definition, it cannot know this.
 
-## Пример 3
-```
-#include <iostream>
 
-int a;
+# 3. STL контейнеры
 
-int main () {
-    std::cout << a;
-}
-```
-Ответ: 0  
-Пояснение: Since _a_ has static storage duration and no initializer, it is guaranteed to be zero-initialized. Had a been defined as a local non-static variable inside `main()`, this would not have happened.
 
-Note: int a has static storage duration because it is declared at namespace scope. It does not need to have static in front of it, that would only denote internal linkage.
-
-## Пример 4
+## Пример 3.1
 ```
 #include <iostream>
 #include <map>
