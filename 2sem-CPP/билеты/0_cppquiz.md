@@ -15,6 +15,21 @@ int main () {
 
 Note: int a has static storage duration because it is declared at namespace scope. It does not need to have static in front of it, that would only denote internal linkage.
 
+## Пример 1.2
+```
+#include <iostream>
+
+int main() {
+  int i = 42;
+  int j = 1;
+  std::cout << i / --j;
+}
+```
+Ответ: UB
+Пояснение: Integer division by zero is undefined behaviour. According to §[expr.mul]¶4 in the standard: "If the second operand of / or % is zero the behavior is undefined."
+
+
+
 
 # 2. Наследование и иже с ним
 
