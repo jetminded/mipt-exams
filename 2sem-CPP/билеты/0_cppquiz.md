@@ -63,3 +63,18 @@ int main() {
 ```
 Ответ: CE  
 Пояснение: There is a compilation error when attempting to declare `A::createB()` a friend of `B`. To declare `A::createB()` a friend of `B`, the compiler needs to know that that function exists. Since it has only seen the declaration of `A` so far, not the full definition, it cannot know this.
+
+## Пример 3
+```
+#include <iostream>
+
+int a;
+
+int main () {
+    std::cout << a;
+}
+```
+Ответ: 0  
+Пояснение: Since _a_ has static storage duration and no initializer, it is guaranteed to be zero-initialized. Had a been defined as a local non-static variable inside `main()`, this would not have happened.
+
+Note: int a has static storage duration because it is declared at namespace scope. It does not need to have static in front of it, that would only denote internal linkage.
