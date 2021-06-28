@@ -78,3 +78,34 @@ int main () {
 Пояснение: Since _a_ has static storage duration and no initializer, it is guaranteed to be zero-initialized. Had a been defined as a local non-static variable inside `main()`, this would not have happened.
 
 Note: int a has static storage duration because it is declared at namespace scope. It does not need to have static in front of it, that would only denote internal linkage.
+
+## Пример 4
+```
+#include <iostream>
+#include <map>
+using namespace std;
+
+bool default_constructed = false;
+bool constructed = false;
+bool assigned = false;
+
+class C {
+public:
+    C() { default_constructed = true; }
+    C(int) { constructed = true; }
+    C& operator=(const C&) { assigned = true; return *this;}
+};
+
+int main() {
+    map<int, C> m;
+    m[7] = C(1);
+
+    cout << default_constructed << constructed << assigned;
+}
+```
+Ответ: 111  
+Пояснение: The `[]` operator inserts an element if the key is not present. In the case of a class, the element is default constructed. So doing `m[7]` calls the default constructor of `C` (no matter if we assign to it right after), setting `default_constructed` to `true`.
+
+The expression `C(1)` constructs an instance of `C` using the constructor taking an `int`, setting `constructed` to `true`.
+
+The `=` in `m[7] = C(1)` calls the copy assignment operator to copy assign the newly created `C(1)` to the previously default constructed `C` inside the map, setting `assigned` to `true`.
