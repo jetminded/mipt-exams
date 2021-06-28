@@ -207,3 +207,23 @@ int main() {
 The expression `C(1)` constructs an instance of `C` using the constructor taking an `int`, setting `constructed` to `true`.
 
 The `=` in `m[7] = C(1)` calls the copy assignment operator to copy assign the newly created `C(1)` to the previously default constructed `C` inside the map, setting `assigned` to `true`.
+
+
+# Шаблончеки
+```
+#include <iostream>
+
+using namespace std;
+
+template <class T> void f(T) {
+  static int i = 0;
+  cout << ++i;
+}
+
+int main() {
+  f(1);
+  f(1.0);
+  f(1);
+}
+```
+Ответ: 112, для каждого типа реализуется своя void f(T) со своим static int i.
