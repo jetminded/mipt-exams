@@ -28,6 +28,24 @@ int main() {
 Ответ: UB  
 Пояснение: Integer division by zero is undefined behaviour. According to §[expr.mul]¶4 in the standard: "If the second operand of / or % is zero the behavior is undefined."
 
+## Пример 1.3
+```
+#include <iostream>
+
+struct C {
+    C() = default;
+    int i;
+};
+
+int main() {
+    const C c;
+    std::cout << c.i;
+}
+```
+Ответ: CE  
+Пояснение: We're trying to default-initialize _c_. This is not allowed since it is const and _C_ has a defaulted (not user-provided) constructor.
+
+
 
 
 
@@ -98,6 +116,7 @@ int main() {
 ```
 Ответ: CE  
 Пояснение: There is a compilation error when attempting to declare `A::createB()` a friend of `B`. To declare `A::createB()` a friend of `B`, the compiler needs to know that that function exists. Since it has only seen the declaration of `A` so far, not the full definition, it cannot know this.
+
 
 
 # 3. STL контейнеры
