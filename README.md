@@ -11,7 +11,7 @@
 
 ## Алгосы: 21 - 23 июня
 - [Распределение билетов](https://docs.google.com/spreadsheets/d/1cjsrFSCH2gyCbHrCn8p-q_qaw2kq0G_qgDjJO91h8f8/edit?usp=sharing)
-- [Папка с билетами](https://github.com/jetminded/mipt-exams/tree/main/2-sem-AaDS/%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D1%8B)
+- [Папка с билетами](https://github.com/jetminded/mipt-exams/tree/main/2sem-AaDS/%D0%B1%D0%B8%D0%BB%D0%B5%D1%82%D1%8B)
 
 
 ## Плюсы 29 - 30 июня
